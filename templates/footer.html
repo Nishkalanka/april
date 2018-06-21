@@ -1,0 +1,205 @@
+
+<div class="clearfix"></div>
+<div class="Subscribe ">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12 ">
+					<form class="form-inline">
+						<div class="form-group">
+						  <h4>Подпишитесь на рассылку:</h4>
+						</div>
+						<div class="form-group">
+						  <label class="sr-only">Email</label>
+						</div>
+						<div class="form-group">
+						  <label for="inputmMail" class="sr-only">Введите e-mail</label>
+						  <input type="text" class="form-control" id="inputmMail" placeholder="Введите e-mail">
+						</div>
+						<button type="submit" class="btn">Отправить</button>
+						</form>
+						
+				</div>
+			</div>
+		</div><!--container-->
+	</div><!--Subscribe-->
+
+<footer>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<p>КАК КУПИТЬ</p>
+				<ul>
+				
+					<li><a  href="#">Оплата и доставка</a></li>
+					<li><a href="#">Примерка</a></li>
+					<li><a href="#">Возврат</a></li>
+					<li><a href="#">Защита персональных данных</a></li>
+					<li><a data-toggle="modal" data-target="#Subscribe" href="#">Подписка  М / Ж</a></li>
+				</ul>
+
+				
+				
+			</div> <!-- //end span3 -->
+			<div class="col-sm-6 col-md-3">
+				<p>КАТЕГОРИИ</p>
+				<ul>
+				
+					<li><a href="#">Женская одежда</a></li>
+					<li><a href="#">Мужская одежда</a></li>
+					<li><a href="#">Большие размеры</a></li>
+					<li><a href="#">Аксессуары</a></li>
+					<li><a href="#">Акции / Sale</a></li>
+				</ul>
+			</div> <!-- //end span3 -->
+			<div class="col-sm-6 col-md-3">
+				<p>О НАС</p>
+				<ul>
+				
+					<li><a href="#">О магазине </a></li>
+					<li><a href="text2.php">Сотрудничество</a></li>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Публичная оферта</a></li>
+				</ul>
+			</div> <!-- //end span3 -->
+			<div class="col-sm-6 col-md-3 ">
+				
+				<p class="text-center">СЛУЖБА ПОДДЕРЖКИ КЛИЕНТОВ</p>
+				<p class="Phone text-center">
+				8 <b>800</b> 500-7453 <br>
+				<span> (10:00 - 19:00) по Москве</span></p>
+				<div class="Field hidden-md hidden-sm hidden-xs"><span><img src="/img/field.png" alt="field" width="28" height="34" /></span><p>защита покупателей</p></div>
+				<p class="text-center"><small>Мы гарантируем безопасность покупки в нашем магазине</small></p>
+			</div> <!-- //end span3 -->
+			
+			<div class="Social col-sm-6 col-md-6">
+				<ul class="social-network social-circle">
+						<li class="textsoc">Мы в соц. сетях:</li>
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        
+                    </ul>
+			</div>
+			<div class="PayCards col-sm-6 col-md-6 text-right">
+				<img src="../img/pay.png" alt="pay" width="294" height="33" />
+			</div>
+			<div class="col-md-12 BottomFooter">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet metus tempus, aliquet eros vel, condimentum velit. Proin porttitor eleifend mauris, quis vestibulum mauris ultricies vel. Vivamus a ipsum dignissim, accumsan nulla non, hendrerit sem. Praesent scelerisque fermentum mollis. Nulla libero lorem, ultrices id sollicitudin ac, placerat sed sapien. Duis consequat sapien felis, pretium lobortis quam vulputate vitae. Morbi eget eros eu ex volutpat pharetra. </p>
+				
+				
+				<p class="text-center">&copy; 2015 АпрельFashion</p>
+				
+			</div>
+									
+		</div><!--row-->
+	</div>
+</footer>
+
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script>
+    	$(document).ready(function() {
+		
+    	  $("#owl-demo").owlCarousel({
+    	    items : 2,
+    	    lazyLoad : true,
+    	    navigation : true
+    	  });
+		
+    	});
+    </script>
+	<script>
+		$('#FilterBlock').on('show.bs.dropdown', function () {
+
+  			})
+  			
+  		//Размеры
+  		$('#radioBtn a').on('click', function(){
+	  		var sel = $(this).data('title');
+	  		var tog = $(this).data('toggle');
+	  		$('#'+tog).prop('value', sel);
+    
+	  		$('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+	  		$('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+})	
+  			
+  	</script>
+  	<script>
+	  	$(function () {
+		  	$('[data-toggle="popover"]').popover()
+	})
+  	</script>
+  	<script>
+	  	$(document).ready(function(){
+    $(window).resize(function() {
+
+        ellipses1 = $("#bc1 :nth-child(2)")
+        if ($("#bc1 a:hidden").length >0) {ellipses1.show()} else {ellipses1.hide()}
+        
+        ellipses2 = $("#bc2 :nth-child(2)")
+        if ($("#bc2 a:hidden").length >0) {ellipses2.show()} else {ellipses2.hide()}
+        
+    })
+    
+});
+  	</script>  	
+  	<script>
+	  	var skipSlider = document.getElementById('skipstep');
+	  	
+	  	noUiSlider.create(skipSlider, {
+	  	    range: {
+	  	        'min': 0,
+	  	        '10%': 1000,
+	  	        '20%': 2000,
+	  	        '30%': 3000,
+	  			// Nope, 40 is no fun.
+	  	        '50%': 5000,
+	  	        '60%': 6000,
+	  	        '70%': 7000,
+	  			// I never liked 80.
+	  	        '90%': 9000,
+	  	        'max': 10000
+	  	    },
+	  	    snap: true,
+	  	    start: [2000, 7000]
+	  	});
+  	</script>
+  	<script>
+	  	var skipValues = [
+	  		document.getElementById('skip-value-lower'),
+	  		document.getElementById('skip-value-upper')
+	  	];
+	  	
+	  	skipSlider.noUiSlider.on('update', function( values, handle ) {
+	  		skipValues[handle].innerHTML = values[handle];
+	  	});
+  	</script>
+  	<!--<script>
+   jQuery(function(){
+   
+      $(".my-foto").imagezoomsl({
+        
+         zoomrange: [3, 3]
+      });
+   });   
+</script>  -->
+  	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/modernizr.min.js"></script>	
+	<script src="js/imagesloaded.min.js"></script>	
+	<script src="js/jquery.masonry.min.js"></script>	
+	<!--<script src="js/jquery.rateit.min.js"></script>-->
+	<script src="js/shopfrog.js"></script>
+	<!--<script src="js/zoom.js"></script>-->
+	<!--<script src="js/script.js"></script>-->
+	
+	
